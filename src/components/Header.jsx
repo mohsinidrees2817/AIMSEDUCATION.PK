@@ -3,8 +3,8 @@ import Typed from "react-typed"
 const Header = () => {
   return (
     <>
-    <div className="nav flex justify-between px-12 py-6">
-      <div className="flex items-center p-2">
+    <div className="nav flex justify-between px-12 pt-6 pb-2 border-b-2 border-black shadow-slate-500 shadow-md max-w-[1440px] mx-auto">
+      <div className="flex items-center ">
         <img src="/Asssets/aimslogo.png" alt="" className="w-[70px]" />
         <div className="flex justify-center items-center flex-col">
           <p className="text-4xl font-semibold text-[#b69888]">AIMS</p>
@@ -12,13 +12,11 @@ const Header = () => {
         </div>
       </div>
         <ul className="flex  justify-between items-center gap-4 max-w-[450px] p-2 w-full">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-            <li>Pricing</li>
-            <li>Videos</li>
-
-
+            <li className="hover:bg-[#b69888] px-2 py-1 hover:text-white cursor-pointer">Home</li>
+            <li className="hover:bg-[#b69888] px-2 py-1 hover:text-white cursor-pointer">About</li>
+            <li className="hover:bg-[#b69888] px-2 py-1 hover:text-white cursor-pointer">Contact</li>
+            <li className="hover:bg-[#b69888] px-2 py-1 hover:text-white cursor-pointer">Pricing</li>
+            <li className="hover:bg-[#b69888] px-2 py-1 hover:text-white cursor-pointer">Videos</li>
         </ul>
       </div>
       {/* <div>
