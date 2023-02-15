@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes Moveleft {
+
+  from {  transform: translateX(-800px) }
+  to { transform: translateX(0px) }
+  
+  }
+
+  @keyframes Moveleftfast {
+
+    from {  transform: translateX(0px) }
+    to { transform: translateX(-800px) }
+    
+    }
+
+    .moveright{
+      animation-name: Moveleft;
+      animation-duration: 40s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    
+    
+    .moveleftfast{
+      animation-name: Moveleftfast;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
